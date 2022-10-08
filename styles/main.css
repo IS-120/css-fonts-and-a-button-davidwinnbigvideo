@@ -1,0 +1,99 @@
+:root {
+  --jungle-green: #8db35c;
+  --sage-green: #9ad0b0;
+  --cream-white: #ede7cd;
+  --khaki-light-fawn: #b1ad95;
+  --dark-taupe: #605b56;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hind", sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  display: block;
+}
+
+picture img {
+  max-width: none;
+}
+
+svg {
+  width: 200px;
+}
+
+/* temp fix to size about img */
+img[srcset] {
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+/* temporary fix to size svg images */
+img[src$="svg"] {
+  width: 200px;
+}
+
+h1 {
+  color: var(--jungle-green);
+  font-family: "Lora", serif;
+  line-height: 1.1;
+}
+
+h2 {
+  color: var(--sage-green);
+  font-family: "Lora", serif;
+  line-height: 1.1;
+}
+
+h3 {
+  color: var(--khaki-light-fawn);
+  font-family: "Lora", serif;
+  line-height: 1.1;
+}
+
+/* unvisited link */
+a:link {
+  color: var(--jungle-green);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: var(--dark-taupe);
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--sage-green);
+  text-decoration: none;
+}
+
+a.button:hover {
+  background-color: var(--khaki-light-fawn);
+  color: white;
+  transition: background-color 300ms ease;
+  cursor: pointer;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 50rem;
+}
+
+aside,
+footer,
+header {
+  padding: 0 1em;
+}
