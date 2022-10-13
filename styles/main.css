@@ -86,9 +86,15 @@ a[href]:hover {
 .button:hover {
   background-color: var(--khaki-light-fawn);
   color: white;
-  transition: background-color 300ms ease;
+  transition: background-color 700ms ease;
   cursor: pointer;
   display: inline-block;
+}
+
+.button {
+  background-color: var(--jungle-green);
+  display: inline-block;
+  border-radius: 8px;
 }
 
 main {
